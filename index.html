@@ -3,262 +3,40 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ragy — Brand Design</title>
+<title>Ragy</title>
 <meta name="description" content="Ragy is an independent brand designer. Identity, event design and merch for Devfolio, Huddle01, Ethereum Foundation, DEN and QED.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#000;
-    --fg:#fff;
-    --mute:#808080;
-    --gap:24px;
-    --fs:13px;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{background:var(--bg);color:var(--fg)}
-  body{
-    font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-    font-size:var(--fs);
-    line-height:1.5;
-    padding:20px var(--gap) var(--gap);
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:inherit;text-decoration:none}
-  a:hover{color:var(--mute)}
-  b,strong{font-weight:700}
-  img{display:block;width:100%;height:auto;background:#111}
-
-  /* nav: two text columns, second starts at 50% */
-  nav{display:grid;grid-template-columns:1fr 1fr;align-items:start}
-  nav ul{list-style:none}
-  nav li{line-height:1.4}
-  nav .is-active{color:var(--fg)}
-  nav .is-muted{color:var(--mute)}
-  nav .is-muted:hover{color:var(--fg)}
-
-  main{padding-top:96px}
-  section[hidden]{display:none}
-
-  /* work list */
-  .project{margin-bottom:140px}
-  .project .hero{height:auto}
-  .project .text{margin:24px 0;max-width:620px}
-  .project .text p{margin-top:6px}
-  .gallery{display:grid;gap:var(--gap)}
-  .gallery.c2{grid-template-columns:repeat(2,1fr)}
-  .gallery.c3{grid-template-columns:repeat(3,1fr)}
-  .gallery.c4{grid-template-columns:repeat(4,1fr)}
-  .gallery img{aspect-ratio:var(--ar,1);object-fit:cover}
-
-  /* info */
-  #info .cols{display:grid;grid-template-columns:1fr 1fr;gap:var(--gap);align-items:start}
-  #info .left{max-width:620px}
-  #info .left>*+*{margin-top:48px}
-  #info p+p{margin-top:1.5em}
-  #info .lists{display:grid;grid-template-columns:repeat(3,auto);gap:48px;justify-content:start}
-  #info .lists ul{list-style:none}
-  #info .lists li{line-height:1.4}
-  #info .portrait{aspect-ratio:672/744;object-fit:cover}
-
-  footer{display:flex;justify-content:space-between;padding-top:160px;color:var(--mute)}
-  footer a{color:var(--fg)}
-
-  @media (max-width:800px){
-    :root{--gap:16px}
-    body{padding:16px var(--gap) var(--gap)}
-    main{padding-top:64px}
-    .project{margin-bottom:96px}
-    .gallery.c3,.gallery.c4{grid-template-columns:repeat(2,1fr)}
-    #info .cols{grid-template-columns:1fr}
-    #info .lists{grid-template-columns:1fr 1fr;gap:24px}
-    footer{padding-top:96px}
-  }
-</style>
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
 <nav>
   <ul>
-    <li><b>Ragy</b></li>
-    <li><a href="#work" data-view="work" class="is-active">↳ Work</a></li>
-    <li><a href="#info" data-view="info" class="is-muted">↳ Info</a></li>
+    <li><b><a href="/">Ragy</a></b></li>
+    <li><a href="/" class="on">↳ Work</a></li>
+    <li><a href="/info/" class="off">↳ Info</a></li>
   </ul>
   <ul>
     <li><b>Links</b></li>
-    <li><a href="https://instagram.com/raginayy" target="_blank" rel="noopener">↗ Instagram</a></li>
-    <li><a href="https://x.com/raginayyy" target="_blank" rel="noopener">↗ Twitter / X</a></li>
-    <li><a href="https://t.me/raginay" target="_blank" rel="noopener">↗ Telegram</a></li>
-    <li><a href="mailto:raginayyy@gmail.com">↗ Mail</a></li>
+    <li><a href="https://instagram.com/raginayy" target=_blank rel=noopener>↗ Instagram</a></li><li><a href="https://x.com/raginayyy" target=_blank rel=noopener>↗ Twitter / X</a></li><li><a href="https://t.me/raginay" target=_blank rel=noopener>↗ Telegram</a></li><li><a href="mailto:raginayyy@gmail.com">↗ Mail</a></li>
   </ul>
 </nav>
-
 <main>
-
-<section id="work">
-
-  <article class="project">
-    <img class="hero" src="img/unblocked-hero.jpg" alt="Ethereum Unblocked SF — key visual" loading="eager">
-    <div class="text">
-      <b>Ethereum Unblocked SF</b>
-      <p>Event identity for Ethereum Unblocked SF, with Orok for QED and the Ethereum Foundation. Rooted in San Francisco: the Golden Gate Bridge reread from an oblique angle into the Ethereum diamond, and the subpixel RGB logic of vintage display screens applied to every asset.</p>
-    </div>
-    <div class="gallery c3" style="--ar:590/760">
-      <img src="img/unblocked-1.jpg" alt="" loading="lazy">
-      <img src="img/unblocked-2.jpg" alt="" loading="lazy">
-      <img src="img/unblocked-3.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <img class="hero" src="img/buildindia-hero.jpg" alt="Build India — logo" loading="lazy">
-    <div class="text">
-      <b>Build India</b>
-      <p>Identity for Build India, an in-person hackathon in Bengaluru by Anthropic, Replit and Lightspeed, produced with Devfolio. The logo recomposes Claude's geometric shapes into the letterforms of BUILD INDIA. Black and orange: grounded enough for stage and large format, flexible enough for merch.</p>
-    </div>
-    <div class="gallery c2" style="--ar:694/519">
-      <img src="img/buildindia-1.jpg" alt="" loading="lazy">
-      <img src="img/buildindia-2.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <img class="hero" src="img/trustless-hero.jpg" alt="Trustless Conference — key visual" loading="lazy">
-    <div class="text">
-      <b>Trustless Conference</b>
-      <p>Brand for Trustless, the Ethereum Foundation conference at Devconnect Buenos Aires 2025. Y2K design marked the internet's first great leap; Trustless carries the same weight for web3. The visual language is pulled from that era of digital optimism and rebuilt through a current lens, across graphics, website, merch and stage.</p>
-    </div>
-    <div class="gallery c3" style="--ar:590/760">
-      <img src="img/trustless-1.jpg" alt="" loading="lazy">
-      <img src="img/trustless-2.jpg" alt="" loading="lazy">
-      <img src="img/trustless-3.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <img class="hero" src="img/blocktrain-hero.jpg" alt="Blocktrain — key visual" loading="lazy">
-    <div class="text">
-      <b>Blocktrain</b>
-      <p>India's first hackathon on a moving train. Bengaluru to New Delhi, 36 hours, builders onboard. A train-shaped logotype, Indian Railways stamp typography, vintage ticket textures and hand-drawn illustration, extended into speaker cards styled as tickets, boarding-pass posters, totes and tees.</p>
-    </div>
-    <div class="gallery c3" style="--ar:591/332">
-      <img src="img/blocktrain-1.jpg" alt="" loading="lazy">
-      <img src="img/blocktrain-2.jpg" alt="" loading="lazy">
-      <img src="img/blocktrain-3.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <img class="hero" src="img/den-hero.jpg" alt="DEN — logo" loading="lazy">
-    <div class="text">
-      <b>DEN</b>
-      <p>Brand identity for DEN, an onchain streaming platform built for degen creators. Raw, high-contrast and punk-influenced: black and white with red accents, textures and type that feel pulled from a gig poster, because the raw messaging matches the product's ethos.</p>
-    </div>
-    <div class="gallery c3" style="--ar:589/519">
-      <img src="img/den-1.jpg" alt="" loading="lazy">
-      <img src="img/den-2.jpg" alt="" loading="lazy">
-      <img src="img/den-3.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <img class="hero" src="img/hudlers-hero.jpg" alt="March of the Hudlers — key visual" loading="lazy">
-    <div class="text">
-      <b>March of the Hudlers</b>
-      <p>Campaign branding for Huddle01's Testnet launch. Agora-themed to match the Testnet UI: classical paintings, dramatic compositions and bold condensed type set in Prussian blue and beige. During the node sale, purchasers were allocated illustrated cards as NFTs with star-rated rarity tiers.</p>
-    </div>
-    <div class="gallery c4" style="--ar:464/714">
-      <img src="img/hudlers-1.jpg" alt="" loading="lazy">
-      <img src="img/hudlers-2.jpg" alt="" loading="lazy">
-      <img src="img/hudlers-3.jpg" alt="" loading="lazy">
-      <img src="img/hudlers-4.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <img class="hero" src="img/ethindia-hero.jpg" alt="ETH India 2024 — key visual" loading="lazy">
-    <div class="text">
-      <b>ETH India 2024</b>
-      <p>Identity for ETH India 2024 by Devfolio, drawn from ancient Indian board games: snaking paths, geometric patterns and hand-illustrated motifs. A game where everyone starts at the same square. The system expanded into volunteer applications, partner cards, UI elements and physical merch in a warm, folk-art palette.</p>
-    </div>
-    <div class="gallery c3" style="--ar:591/332">
-      <img src="img/ethindia-1.jpg" alt="" loading="lazy">
-      <img src="img/ethindia-2.jpg" alt="" loading="lazy">
-      <img src="img/ethindia-3.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-  <article class="project">
-    <img class="hero" src="img/merch-hero.jpg" alt="Merchfolio — Huddle01 t-shirt" loading="lazy">
-    <div class="text">
-      <b>Merchfolio</b>
-      <p>Merch for Huddle01 across several events. Each design is contextual: the event it's made for, the country it'll be worn in, the community it's given to. Kept open-ended relative to the brand, so a design on the back of a t-shirt acts as a gateway into the product.</p>
-    </div>
-    <div class="gallery c3" style="--ar:572/522">
-      <img src="img/merch-1.jpg" alt="" loading="lazy">
-      <img src="img/merch-2.jpg" alt="" loading="lazy">
-      <img src="img/merch-3.jpg" alt="" loading="lazy">
-    </div>
-  </article>
-
-</section>
-
-<section id="info" hidden>
-  <div class="cols">
-    <div class="left">
-      <b>Ragy</b>
-      <div>
-        <p>Ragy is an independent designer with a focus on brand design, with experience across marketing, branding and merchandise. Her work lives in the space between a brief and its best possible outcome, translating intent into visuals that land exactly as imagined. She moves easily across formats, shaped more by the work than by a single discipline.</p>
-        <p>Based in India. Available remotely worldwide.</p>
-      </div>
-      <div class="lists">
-        <ul>
-          <li><b>Clients</b></li>
-          <li>Devfolio</li><li>Huddle01</li><li>Ethereum Foundation</li><li>DEN</li><li>QED</li>
-        </ul>
-        <ul>
-          <li><b>Services</b></li>
-          <li>Creative direction</li><li>Brand identity</li><li>Logo development</li><li>Event &amp; campaign design</li><li>Merchandise design</li>
-        </ul>
-        <ul>
-          <li><b>Contact</b></li>
-          <li><a href="mailto:raginayyy@gmail.com">↗ raginayyy@gmail.com</a></li>
-          <li><a href="https://instagram.com/raginayy" target="_blank" rel="noopener">↗ Instagram @raginayy</a></li>
-          <li><a href="https://x.com/raginayyy" target="_blank" rel="noopener">↗ Twitter / X @raginayyy</a></li>
-          <li><a href="https://t.me/raginay" target="_blank" rel="noopener">↗ Telegram @raginay</a></li>
-        </ul>
-      </div>
-    </div>
-    <img class="portrait" src="img/portrait.jpg" alt="Ragy" loading="lazy">
-  </div>
-</section>
-
+<div class="grid" id="top">
+<a class="item w2" href="/ethereum-unblocked-sf/"><img src="/img/unblocked-hero.jpg" width="1263" height="1122" alt="Ethereum Unblocked SF"><div class="t"><b>Ethereum Unblocked SF</b><p>Event identity for Ethereum Unblocked SF, with Orok for QED and the Ethereum Foundation.</p></div></a>
+<a class="item" href="/build-india/"><img src="/img/buildindia-hero.jpg" width="2000" height="1777" alt="Build India" loading=lazy><div class="t"><b>Build India</b><p>Identity for an AI-native hackathon in Bengaluru by Anthropic, Replit and Lightspeed, produced with Devfolio.</p></div></a>
+<a class="item r" href="/trustless-conference/"><img src="/img/trustless-hero.jpg" width="2000" height="1777" alt="Trustless Conference" loading=lazy><div class="t"><b>Trustless Conference</b><p>Brand for the Ethereum Foundation&#x27;s conference at Devconnect Buenos Aires 2025.</p></div></a>
+<a class="item w2" href="/blocktrain/"><img src="/img/blocktrain-hero.jpg" width="2000" height="1777" alt="Blocktrain" loading=lazy><div class="t"><b>Blocktrain</b><p>India&#x27;s first hackathon on a moving train: Bengaluru to New Delhi, 36 hours, builders onboard.</p></div></a>
+<a class="item" href="/den/"><img src="/img/den-hero.jpg" width="2000" height="1777" alt="DEN" loading=lazy><div class="t"><b>DEN</b><p>Identity for an onchain streaming platform built for degen creators.</p></div></a>
+<a class="item r" href="/march-of-the-hudlers/"><img src="/img/hudlers-hero.jpg" width="2000" height="1777" alt="March of the Hudlers" loading=lazy><div class="t"><b>March of the Hudlers</b><p>Campaign for Huddle01&#x27;s Testnet launch, plus illustrated rarity cards for the node sale.</p></div></a>
+<a class="item" href="/eth-india-2024/"><img src="/img/ethindia-4.jpg" width="2000" height="1857" alt="ETH India 2024" loading=lazy><div class="t"><b>ETH India 2024</b><p>Identity for Devfolio&#x27;s hackathon, drawn from ancient Indian board games.</p></div></a>
+<a class="item r" href="/merchfolio/"><img src="/img/merch-hero.jpg" width="2000" height="1333" alt="Merchfolio" loading=lazy><div class="t"><b>Merchfolio</b><p>Event merch for Huddle01, designed for the event, the country and the community it was made for.</p></div></a>
+</div>
 </main>
-
 <footer>
-  <a href="#work" data-view="work">↑ Top</a>
+  <a href="#top">↑ Top</a>
   <span>© 2024—2026 Ragy</span>
 </footer>
-
-<script>
-(function(){
-  var views={work:document.getElementById('work'),info:document.getElementById('info')};
-  var links=document.querySelectorAll('nav a[data-view]');
-  function show(name){
-    if(!views[name]) name='work';
-    for(var k in views) views[k].hidden=(k!==name);
-    links.forEach(function(a){
-      var on=a.dataset.view===name;
-      a.classList.toggle('is-active',on);
-      a.classList.toggle('is-muted',!on);
-    });
-    window.scrollTo(0,0);
-  }
-  function fromHash(){show((location.hash||'#work').slice(1));}
-  window.addEventListener('hashchange',fromHash);
-  fromHash();
-})();
-</script>
 </body>
 </html>
